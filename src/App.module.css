@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  height: 56px;
+  width: 274px;
+  flex-shrink: 0;
+  background-color: #ECECEC;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input {
+  height: 60%;
+  width: 75%;
+  background-color: transparent;
+  border: none;
+  color: black;
+  border-radius: 28px;
+}
+.input::placeholder {
+  font-size: 1rem;
+}
+
+.iconSearch {
+  height: 24px;
+  width: 24px;
+}
+
+.placeInformation {
+  /* outline: 1px solid red; */
+  display: flex;
+  padding: 0 .8rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  width: 60%;
+  /* outline: 1px solid rebeccapurple; */
+}
+
+.cityGroup {
+  display: flex;
+  align-items: center;
+}
+
+.nameCity {
+  font-size: 24px;
+  color: #0085CC;
+  font-weight: 600;
+}
+
+.nameCountry {
+  margin-left: .5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.date {
+  font-size: 14;
+  color: #6e6e6e;
+  font-weight: 400;
+}
+
+.hour {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.iconShare {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+}
+
+.iconShare img {
+  height: 100%;
+  width: 100%;
+}

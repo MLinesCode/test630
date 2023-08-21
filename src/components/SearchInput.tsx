@@ -1,39 +1,24 @@
-import React, { useState } from 'react';
+// import { useState } from 'react';
 import SearchIcon from "../assets/search.svg"
-import ShareIcon from "../assets/share.svg"
+// import ShareIcon from "../assets/share.svg"
+import styles from './SearchInput.module.css'
 
 interface SearchInputProps {
   onSearch: (query: string) => void;
 }
 
-const SearchInput: React.FC<SearchInputProps> = ({ onSearch }) => {
-  const [query, setQuery] = useState<string>('');
-
-  const handleSearch = () => {
-    onSearch(query);
-  };
-
-  const handleClear = () => {
-    setQuery('');
-    onSearch('');
-  };
+const SearchInput: React.FC<SearchInputProps> = () => {
 
   return (
-    <div className="search-input">
+    <div>
       <input
+        className={styles.container}
         type="text"
         placeholder="Buscar"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
       />
-      <button className="search-button" onClick={handleSearch}>
+      <button className="search-button">
         <img src={SearchIcon} alt="Buscar" />
       </button>
-      {query && (
-        <button className="clear-button" onClick={handleClear}>
-          <img src={ShareIcon} alt="Limpiar" />
-        </button>
-      )}
     </div>
   );
 };
