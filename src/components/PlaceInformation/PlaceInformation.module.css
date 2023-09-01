@@ -1,0 +1,53 @@
+.placeInformation {
+  display: flex;
+  padding: 0 .8rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  width: 60%;
+  /* outline: 1px solid rebeccapurple; */
+}
+
+.cityGroup {
+  display: flex;
+  align-items: center;
+}
+
+.nameCity {
+  font-size: 24px;
+  color: #0085CC;
+  font-weight: 600;
+}
+
+.nameCountry {
+  margin-left: .5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.date {
+  font-size: 14;
+  color: #6e6e6e;
+  font-weight: 400;
+}
+
+.hour {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.iconShare {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+  position: relative;
+  bottom: 2rem;
+}
+
+.iconShare img {
+  height: 100%;
+  width: 100%;
+}

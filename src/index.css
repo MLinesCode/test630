@@ -2,7 +2,15 @@
   font-family: 'Nunito', sans-serif;
   color-scheme: light dark;
   color: rgba(33, 33, 33, 0.87);
-  background-color: #f6f6f6;
+}
+
+.dark-mode {
+  background-color: #272727;
+  color: #f1f0f0;
+}
+
+.light-mode {
+  background-color: #f1f0f0;
 }
 
 h1, h2, h3, h4, p {
@@ -11,7 +19,7 @@ h1, h2, h3, h4, p {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 20px 0;
   box-sizing: border-box;
 }
 

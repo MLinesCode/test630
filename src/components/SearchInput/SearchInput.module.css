@@ -1,0 +1,41 @@
+.container {
+  height: 56px;
+  width: 274px;
+  padding: 0 10px;
+  flex-shrink: 0;
+  background-color: #ECECEC;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input {
+  height: 60%;
+  width: 75%;
+  background-color: transparent;
+  border: none;
+  color: black;
+  border-radius: 28px;
+  font-size: 1rem;
+}
+.input::placeholder {
+  font-size: 1rem;
+}
+.input:focus {
+  outline: none;
+}
+
+.iconButton {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  object-fit: cover;
+  background-color: transparent;
+}
+
+.iconSearch {
+  height: 29px;
+  width: 29px;
+}

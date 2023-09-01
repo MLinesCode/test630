@@ -1,6 +1,6 @@
 import { WeatherResponse } from './types';
 
-const API_KEY = import.env.API_KEY;
+const API_KEY = 'ae886fedb02ac2885bb54ff712a65727';
 
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 

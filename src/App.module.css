@@ -1,88 +1,110 @@
-#root {
+  #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.container {
-  height: 56px;
-  width: 274px;
-  flex-shrink: 0;
-  background-color: #ECECEC;
-  border-radius: 28px;
+.status {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 16px 16px 0px 16px;
+}
+
+.statusPrincipal {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.imageIcon {
+  height: 50px;
+  width: 50px;
+}
+
+.temperature {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.feelslike {
+  font-size: 1.3rem;
+}
+
+.feelslikeTemperature {
+  font-size: 1.1rem;
+}
+
+.temperatureContent {
+  display: flex;
+  padding: 28px 0;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
-.input {
-  height: 60%;
-  width: 75%;
-  background-color: transparent;
-  border: none;
-  color: black;
-  border-radius: 28px;
+.temperatureContainer {
+  /* width: 118px; */
+  border-radius: 18px;
+  padding: 11px;
+  margin: 0 5px;
+  background-color: #f1f0f0;
 }
-.input::placeholder {
+
+.temperatureSubItem {
   font-size: 1rem;
 }
 
-.iconSearch {
-  height: 24px;
-  width: 24px;
-}
-
-.placeInformation {
-  /* outline: 1px solid red; */
+.temperatureItems {
   display: flex;
-  padding: 0 .8rem;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
-.info {
-  width: 60%;
-  /* outline: 1px solid rebeccapurple; */
+.temperatureItems h3 {
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 400;
 }
 
-.cityGroup {
+.recomendations {
+  padding: 16px;
+}
+
+.recomendationsList {
+  margin: 15px auto;
+  width: 80%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f1f0f0;
+}
+
+.map {
+  padding: 10px 15px;
+}
+.mapIframe {
+  margin: 1rem auto;
+  height: 10rem;
+  max-width: 80vw;
+  border-radius: 8px;
+  background-color: #f1f0f0;
+}
+
+.saveButton {
+  height: 40px;
+  width: 120px;
+}
+
+.save {
+  height: 3rem;
+  border: none;
+  border-radius: 16px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  right: 25px;
   display: flex;
   align-items: center;
-}
-
-.nameCity {
-  font-size: 24px;
-  color: #0085CC;
-  font-weight: 600;
-}
-
-.nameCountry {
-  margin-left: .5rem;
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-
-.date {
-  font-size: 14;
-  color: #6e6e6e;
-  font-weight: 400;
-}
-
-.hour {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.iconShare {
-  height: 28px;
-  width: 28px;
-  object-fit: contain;
-}
-
-.iconShare img {
-  height: 100%;
-  width: 100%;
+  cursor: pointer;
 }
