@@ -113,7 +113,7 @@ const SearchInput: React.FC = () => {
         {isHistoryOpen && (
           <div className={styles.history}>
             <button className={styles.closeButton} onClick={handleCloseHistory}>
-              X
+              x
             </button>
             <p className={styles.recentSearches}>Recent Searches:</p>
             <ul>

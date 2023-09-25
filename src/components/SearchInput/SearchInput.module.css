@@ -6,6 +6,7 @@
   background-color: #ECECEC;
   border-radius: 28px;
   display: flex;
+  position: relative;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
@@ -38,4 +39,53 @@
 .iconSearch {
   height: 29px;
   width: 29px;
+}
+
+/* Estilo para el historial */
+.history {
+  position: absolute;
+  top: 100%; /* Coloca el historial debajo del input */
+  left: 0;
+  border-radius: 4px;
+  padding: 8px 24px 8px 16px;
+  width: 100%;
+  background-color: #e6e6e6; /* Fondo blanco para el historial */
+  border-top: none; /* Evita duplicar el borde superior */
+  max-height: 150px; /* Establece una altura máxima para el desplazamiento vertical */
+  overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el historial */
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history li {
+  padding: 8px 10px;
+  font-size: 1rem;
+  margin: 5px 0;
+  border-bottom: 1px solid #ccc; /* Borde inferior entre elementos del historial */
+}
+
+/* Estilos para la caja del historial cuando no hay historial */
+.history:empty {
+  display: none; /* Oculta la caja del historial cuando no hay elementos */
+}
+
+.closeButton {
+  height: 30px;
+  width: 30px;
+  margin-left: 86%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recentSearches {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 5px;
 }
