@@ -5,38 +5,6 @@
   text-align: center;
 }
 
-.status {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 16px 16px 0px 16px;
-}
-
-.statusPrincipal {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-}
-
-.imageIcon {
-  height: 50px;
-  width: 50px;
-}
-
-.temperature {
-  font-size: 3.2rem;
-  font-weight: 600;
-}
-
-.feelslike {
-  font-size: 1.3rem;
-}
-
-.feelslikeTemperature {
-  font-size: 1.1rem;
-}
-
 .temperatureContent {
   display: flex;
   padding: 28px 0;
