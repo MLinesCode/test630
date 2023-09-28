@@ -20,14 +20,14 @@ const PlaceInformation: React.FC = () => {
     return null; // Puedes manejar el caso donde no hay datos almacenados
   }
 
-  const { name, sys } = storedData;
+  const { nameCity, nameCountry } = storedData;
 
   return (
     <div className={styles.placeInformation}>
       <div className={styles.info}>
         <div className={styles.cityGroup}>
-          <h2 className={styles.nameCity}>{name}</h2>
-          <h3 className={styles.nameCountry}>{sys.country}</h3>
+          <h2 className={styles.nameCity}>{nameCity}</h2>
+          <h3 className={styles.nameCountry}>{nameCountry}</h3>
         </div>          
         <p className={styles.date}>{monthYearString}</p>
         <p className={styles.date}>{dayOfWeekDayOfMonthString}</p>
