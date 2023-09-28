@@ -1,14 +1,7 @@
-import { getStoredData } from "../../services/storaje";
-import ShareIcon from '../../assets/share.svg'
-import styles from './PlaceInformation.module.css'
-
-interface WeatherData {
-  name: string;
-  sys: {
-    country: string;
-  };
-  // Agrega otras propiedades según la estructura real de tus datos almacenados
-}
+import React from 'react';
+import { getStoredData } from '../../services/storaje';
+import ShareIcon from '../../assets/share.svg';
+import styles from './PlaceInformation.module.css';
 
 const PlaceInformation: React.FC = () => {
   const storedData = getStoredData();
@@ -20,14 +13,15 @@ const PlaceInformation: React.FC = () => {
     return null; // Puedes manejar el caso donde no hay datos almacenados
   }
 
-  const { nameCity, nameCountry } = storedData;
+  const { sys, name } = storedData;
+  const { country } = sys;
 
   return (
     <div className={styles.placeInformation}>
       <div className={styles.info}>
         <div className={styles.cityGroup}>
-          <h2 className={styles.nameCity}>{nameCity}</h2>
-          <h3 className={styles.nameCountry}>{nameCountry}</h3>
+          <h2 className={styles.nameCity}>{name}</h2>
+          <h3 className={styles.nameCountry}>{country}</h3>
         </div>          
         <p className={styles.date}>{monthYearString}</p>
         <p className={styles.date}>{dayOfWeekDayOfMonthString}</p>
@@ -37,7 +31,7 @@ const PlaceInformation: React.FC = () => {
         <img src={ShareIcon} alt="Icono para compartir" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PlaceInformation
+export default PlaceInformation;
